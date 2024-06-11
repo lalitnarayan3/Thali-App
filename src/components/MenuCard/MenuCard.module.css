@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: white;
+  color: black;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
+  color: black;
+}
+
+.card p {
+  margin: 5px 0;
+  color: rgba(0, 0, 0, 0.5)
+}
+.rate{
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: green;
+  width: 60px;
+  
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 2px;
+  font-weight: 700;
+}
+.addToCart {
+  padding: 10px;
+  margin: 15px 40px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addToCart:hover {
+  background-color: #0b6b20;
+}
+input {
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  justify-content: center; 
+}
+
+.btnContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  
+}
+
+.btnContainer button {
+  padding: 10px 20px;
+  background-color: white;
+  color: crimson;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #ce8686;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnContainer button:hover {
+  background-color: #918c8c;
+}
+
+
+@media (max-width: 768px) {
+  .btnContainer button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btnContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btnContainer button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

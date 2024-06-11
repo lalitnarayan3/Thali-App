@@ -1,0 +1,127 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+  }
+  
+  .brand {
+    flex: 1;
+  }
+  
+  .brandLink {
+    text-decoration: none;
+    color: rgb(202, 39, 52);
+  }
+  .brandLink h2{
+    font-weight: bold;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    flex: 2;
+    justify-content: space-around;
+    transition: transform 0.3s ease;
+  }
+  
+  .link, .activeLink {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    
+  }
+  .link:hover{
+    color:  rgb(202, 39, 52);
+    transition: transform 0.2s;
+    transform: scale(1.2);
+  }
+  .activeLink {
+    border-bottom: 2px solid  rgb(202, 39, 52);
+    transition: transform 0.2s;
+    transform: scale(1.2);
+    color:  rgb(202, 39, 52);
+  }
+  .iconLink {
+    margin: 0 10px;
+  }
+  
+  .iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+  }
+  .iconButtonActive{
+   border-bottom: 2px solid  rgb(202, 39, 52);
+    color: red;
+  }
+  
+  .iconButton:hover{
+    color:  rgb(202, 39, 52);
+    transition: transform 0.2s;
+    transform: scale(1.2);
+  }
+  
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: white;
+      flex-direction: column;
+      align-items: flex-start;
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+    }
+  
+    .navOpen {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  
+    .link, .activeLink, .iconLink {
+      margin: 10px 20px;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .brand, .nav {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav {
+      margin-top: 10px;
+    }
+  
+    .link, .activeLink, .iconLink {
+      margin: 5px 0;
+    }
+  }
+  

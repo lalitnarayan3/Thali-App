@@ -1,0 +1,132 @@
+.cartMsg{
+  width: 230px;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ca0505;
+    margin-bottom: 200px;
+}
+.cartDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cart img{
+  width: 100px;
+  margin-right: 20px;
+}
+.cart h4{
+  font-size: 21px;
+}
+.cartMiddle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cartMiddle > div {
+  margin: 10px 0;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  font-weight: 700
+}
+
+.quantity button {
+  padding: 5px 10px;
+  background-color: rgb(25, 135, 84);
+    color: white;
+    font-weight: 700;
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+.cartTotal {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.checkoutButton {
+    width: 150px;
+    height: 53px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin: 20px 0px;
+    background-color: rgb(13, 110, 253);
+    padding: 5px;
+
+}
+
+.checkoutButton:hover {
+  background-color: rgb(8, 59, 134);
+}
+
+.removeBtn {
+  background-color: rgb(220, 53, 69);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 90px;
+}
+
+.removeBtn:hover {
+  background-color:rgb(120, 10, 21);
+}
+
+@media (min-width: 600px) {
+  .cartDetails {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cart {
+    margin-bottom: 0;
+  }
+
+  .cartMiddle {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cartMiddle > div {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .cart img {
+    width: 80px;
+  }
+  .cart h4{
+    font-size: 18px;
+  }
+
+}

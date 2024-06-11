@@ -1,0 +1,24 @@
+.container {
+    margin: auto;
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+    max-width: 400px; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, -0.81);
+  }
+  input{
+    padding: 4px;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 16px;
+  }
